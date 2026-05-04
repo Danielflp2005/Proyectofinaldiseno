@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Leaf - Tienda de Plantas</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <!-- Logo decorativo: alt vacío porque el nombre de la tienda ya aparece en el <span> -->
+      <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=80&h=80&fit=crop" alt="">
+      <span>Green Leaf</span>
+    </div>
+    <nav aria-label="Navegación principal">
+      <a href="#plantas">Plantas</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Tu rincón verde en casa</h1>
+    <p>
+      Descubre nuestra selección de plantas de interior y exterior, cuidadas con
+      amor para que lleguen sanas y listas para alegrar tu hogar.
+    </p>
+    <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800"
+      alt="Colección de plantas verdes en macetas de cerámica blanca sobre una superficie de madera">
+    <a href="#plantas" class="btn-primary">Ver catálogo</a>
+  </section>
+
+  <!-- PLANTS GRID -->
+  <section class="plants" id="plantas">
+    <h2>Nuestras plantas más populares</h2>
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400"
+          alt="Monstera Deliciosa con sus características hojas verdes perforadas">
+        <div class="card-body">
+          <h3>Monstera Deliciosa</h3>
+          <p>Perfecta para espacios luminosos. De crecimiento rápido y muy resistente.</p>
+          <span class="price">18,90 €</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- URL fiable de Unsplash para Pothos Dorado -->
+        <img src="https://images.unsplash.com/photo-1572688484438-313a6e50c333?w=400"
+          alt="Pothos Dorado con hojas verde-amarillas colgando de una maceta colgante">
+        <div class="card-body">
+          <h3>Pothos Dorado</h3>
+          <p>Ideal para principiantes. Purifica el aire y aguanta poca luz.</p>
+          <span class="price">9,50 €</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400"
+          alt="Cactus San Pedro de forma columnar en maceta de barro sobre fondo blanco">
+        <div class="card-body">
+          <h3>Cactus San Pedro</h3>
+          <p>Casi no necesita riego. Decorativo y muy longevo en maceta.</p>
+          <span class="price">12,00 €</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=400"
+          alt="Helecho de Boston con frondas verde intenso que cuelgan en cascada">
+        <div class="card-body">
+          <h3>Helecho de Boston</h3>
+          <p>Aporta humedad y textura. Perfecto para baños y cocinas.</p>
+          <span class="price">14,75 €</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="nosotros">
+    <img src="https://images.unsplash.com/photo-1466781783364-36c955e42a7f?w=600"
+      alt="Dos personas eligiendo plantas en un vivero lleno de vegetación">
+    <div class="about-text">
+      <h2>¿Quiénes somos?</h2>
+      <p>
+        Green Leaf nació en 2015 con la misión de acercar la naturaleza a los hogares
+        urbanos. Somos un equipo pequeño de apasionados de la botánica con más de
+        diez años de experiencia en jardinería y comercio local.
+      </p>
+      <p>
+        Todas nuestras plantas se cultivan en viveros locales y se envían con
+        embalaje biodegradable. Creemos que cuidar una planta es también cuidar
+        el planeta.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contacto">
+    <h2>Contacta con nosotros</h2>
+    <p>¿Tienes alguna pregunta? Escríbenos y te respondemos en menos de 24 horas.</p>
+
+    <form novalidate>
+
+      <div class="field">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: María García" autocomplete="name" required
+          aria-required="true" />
+      </div>
+
+      <div class="field">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Ej: maria@correo.com" autocomplete="email" required
+          aria-required="true" />
+      </div>
+
+      <div class="field">
+        <label for="telefono">Teléfono <span aria-hidden="true">(opcional)</span></label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: +34 600 000 000" autocomplete="tel"
+          aria-label="Teléfono (opcional)" />
+      </div>
+
+      <div class="field">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required
+          aria-required="true"></textarea>
+      </div>
+
+      <button type="submit">Enviar mensaje</button>
+
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Green Leaf S.L. · Todos los derechos reservados</p>
+    <p>
+      <a href="#">Política de privacidad</a> ·
+      <a href="#">Aviso legal</a> ·
+      <a href="#">Cookies</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
